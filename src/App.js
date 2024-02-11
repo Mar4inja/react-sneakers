@@ -1,6 +1,25 @@
 function App() {
   return (
     <div className="wrapper clear">
+      <div className="overlay">
+        <div className="drawer">
+          <h2 className="mb-30">Basket</h2>
+
+          <div className="basketItem d-flex align-center">
+            <div
+              style={{ backgroundImage: "url(/img/sneakers/sneakers-1.jpg)" }}
+              className="basketItemImg"
+            ></div>
+
+            <div className="mr-20 flex">
+              <p className="mb-5">Men's Nike Blazer Mid Suede Sneakers</p>
+              <b>132,47 €</b>
+            </div>
+            <img className="removeBtn" src="/img/close.svg" alt="Remove" />
+          </div>
+        </div>
+      </div>
+
       <header className="d-flex justify-between align-center p-40">
         <div className="d-flex align-center">
           <img width={40} height={40} src="/img/logo.png" alt="logo" />
@@ -21,16 +40,18 @@ function App() {
       </header>
       <div className="content p-40">
         <div className="d-flex align-center justify-between mb-40">
-        <h1>All Sneakers</h1>
-        <div className="search-block d-flex ">
-          <img src="/img/search.svg" alt="Search"/>
-          <input placeholder="Search item ..."/>
-
-        </div>
+          <h1>All Sneakers</h1>
+          <div className="search-block d-flex ">
+            <img src="/img/search.svg" alt="Search" />
+            <input placeholder="Search item ..." />
+          </div>
         </div>
 
         <div className="d-flex">
           <div className="card">
+            <div className="favorite">
+              <img src="/img/like-1.svg" alt="Unlinked" />
+            </div>
             <img
               width={133}
               height={112}
