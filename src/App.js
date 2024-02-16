@@ -3,20 +3,52 @@ function App() {
     <div className="wrapper clear">
       <div className="overlay">
         <div className="drawer">
-          <h2 className="mb-30">Basket</h2>
+          <h2 className="mb-30">Basket</h2> 
 
-          <div className="basketItem d-flex align-center">
-            <div
-              style={{ backgroundImage: "url(/img/sneakers/sneakers-1.jpg)" }}
-              className="basketItemImg"
-            ></div>
+          <div className="items">
 
-            <div className="mr-20 flex">
-              <p className="mb-5">Men's Nike Blazer Mid Suede Sneakers</p>
-              <b>132,47 €</b>
+            <div className="basketItem d-flex align-center mb-20">
+              <div
+                style={{ backgroundImage: "url(/img/sneakers/sneakers-1.jpg)" }}
+                className="basketItemImg"
+              ></div>
+
+              <div className="mr-20 flex">
+                <p className="mb-5">Men's Nike Blazer Mid Suede Sneakers</p>
+                <b>132,47 €</b>
+              </div>
+              <img className="removeBtn" src="/img/close.svg" alt="Remove" />
             </div>
-            <img className="removeBtn" src="/img/close.svg" alt="Remove" />
+
+            <div className="basketItem d-flex align-center">
+              <div
+                style={{ backgroundImage: "url(/img/sneakers/sneakers-1.jpg)" }}
+                className="basketItemImg"
+              ></div>
+
+              <div className="mr-20 flex">
+                <p className="mb-5">Men's Nike Blazer Mid Suede Sneakers</p>
+                <b>132,47 €</b>
+              </div>
+              <img className="removeBtn" src="/img/close.svg" alt="Remove" />
+            </div>
           </div>
+          <div className="cartTotalBlock">
+          <ul>
+            <li>
+              <span>Total:</span>
+              <div></div>
+              <b>219,51 €</b>
+            </li>
+            <li>
+              <span>Tax 5%:</span>
+              <div></div>
+              <b>10,97 €</b>
+            </li>
+          </ul>
+          <button className="checkoutBtn">Checkout order</button>
+          </div>
+          
         </div>
       </div>
 
@@ -112,7 +144,7 @@ function App() {
                 <span>Price:</span>
                 <b>132,47 €</b>
               </div>
-              <button className="button">
+              <button className="buttonPlus">
                 <img
                   className="plus"
                   width={11}
